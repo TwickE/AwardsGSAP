@@ -7,6 +7,17 @@ body {
     overflow-x: hidden;
 }
 
+* {
+    box-sizing: border-box;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* Firefox */
+}
+
+/* Hide WebKit (Chrome, Safari, Opera) scrollbars */
+*::-webkit-scrollbar {
+    display: none;
+}
+
 @layer base {
     @font-face {
         font-family: 'zentry';
