@@ -4,19 +4,23 @@ import { FaXTwitter } from 'react-icons/fa6';
 const links = [
     {
         href: 'https://www.discord.com',
-        icon: <FaDiscord />
+        icon: <FaDiscord />,
+        name: 'Discord'
     },
     {
         href: 'https://www.x.com',
-        icon: <FaXTwitter />
+        icon: <FaXTwitter />,
+        name: 'X'
     },
     {
         href: 'https://www.github.com',
-        icon: <FaGithub />
+        icon: <FaGithub />,
+        name: 'Github'
     },
     {
         href: 'https://www.twitch.com',
-        icon: <FaTwitch />
+        icon: <FaTwitch />,
+        name: 'Twitch'
     }
 ];
 
@@ -33,6 +37,7 @@ const Footer = () => {
                         target='_blank'
                         rel='noopener noreferrer'
                         className='text-black transition-colors duration-500 ease-in-out hover:text-white'
+                        aria-label={link.name}
                     >
                         {link.icon}
                     </a>

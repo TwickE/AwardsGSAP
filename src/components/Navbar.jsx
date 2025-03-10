@@ -74,7 +74,7 @@ const Navbar = () => {
                                 </a>
                             ))}
                         </div>
-                        <button className="ml-10 flex items-center space-x-0.5 cursor-pointer" onClick={toggleAudioIndicator}>
+                        <button className="ml-10 flex items-center space-x-0.5 cursor-pointer" onClick={toggleAudioIndicator} aria-label="Toggle audio">
                             <audio
                                 ref={audioElementRef}
                                 className="hidden"
